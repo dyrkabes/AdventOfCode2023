@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E929F5892B572EAE001A077A /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E929F5882B572EAE001A077A /* FileLoader.swift */; };
+		E929F58B2B5730B9001A077A /* FileLoaderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E929F58A2B5730B9001A077A /* FileLoaderTest.swift */; };
+		E929F58F2B573123001A077A /* SampleFile in Resources */ = {isa = PBXBuildFile; fileRef = E929F58E2B573123001A077A /* SampleFile */; };
 		E9DA09502B57033F002DBCD0 /* AdventOfCode2023App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA094F2B57033F002DBCD0 /* AdventOfCode2023App.swift */; };
 		E9DA09522B57033F002DBCD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA09512B57033F002DBCD0 /* ContentView.swift */; };
 		E9DA09542B570340002DBCD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9DA09532B570340002DBCD0 /* Assets.xcassets */; };
 		E9DA09582B570340002DBCD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9DA09572B570340002DBCD0 /* Preview Assets.xcassets */; };
-		E9DA09622B570340002DBCD0 /* AdventOfCode2023Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA09612B570340002DBCD0 /* AdventOfCode2023Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E929F5882B572EAE001A077A /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
+		E929F58A2B5730B9001A077A /* FileLoaderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoaderTest.swift; sourceTree = "<group>"; };
+		E929F58E2B573123001A077A /* SampleFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = SampleFile; sourceTree = "<group>"; };
 		E9DA094C2B57033F002DBCD0 /* AdventOfCode2023.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdventOfCode2023.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9DA094F2B57033F002DBCD0 /* AdventOfCode2023App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventOfCode2023App.swift; sourceTree = "<group>"; };
 		E9DA09512B57033F002DBCD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,7 +37,6 @@
 		E9DA09552B570340002DBCD0 /* AdventOfCode2023.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AdventOfCode2023.entitlements; sourceTree = "<group>"; };
 		E9DA09572B570340002DBCD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E9DA095D2B570340002DBCD0 /* AdventOfCode2023Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventOfCode2023Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9DA09612B570340002DBCD0 /* AdventOfCode2023Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventOfCode2023Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E929F5862B572E92001A077A /* Day1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Day1;
+			sourceTree = "<group>";
+		};
+		E929F5872B572E9D001A077A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E929F5882B572EAE001A077A /* FileLoader.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E929F58C2B5730E6001A077A /* HelpersTests */ = {
+			isa = PBXGroup;
+			children = (
+				E929F58E2B573123001A077A /* SampleFile */,
+				E929F58A2B5730B9001A077A /* FileLoaderTest.swift */,
+			);
+			path = HelpersTests;
+			sourceTree = "<group>";
+		};
+		E929F58D2B573101001A077A /* Day1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Day1;
+			sourceTree = "<group>";
+		};
 		E9DA09432B57033F002DBCD0 = {
 			isa = PBXGroup;
 			children = (
@@ -74,10 +109,12 @@
 		E9DA094E2B57033F002DBCD0 /* AdventOfCode2023 */ = {
 			isa = PBXGroup;
 			children = (
+				E9DA09552B570340002DBCD0 /* AdventOfCode2023.entitlements */,
 				E9DA094F2B57033F002DBCD0 /* AdventOfCode2023App.swift */,
 				E9DA09512B57033F002DBCD0 /* ContentView.swift */,
 				E9DA09532B570340002DBCD0 /* Assets.xcassets */,
-				E9DA09552B570340002DBCD0 /* AdventOfCode2023.entitlements */,
+				E929F5862B572E92001A077A /* Day1 */,
+				E929F5872B572E9D001A077A /* Helpers */,
 				E9DA09562B570340002DBCD0 /* Preview Content */,
 			);
 			path = AdventOfCode2023;
@@ -94,7 +131,8 @@
 		E9DA09602B570340002DBCD0 /* AdventOfCode2023Tests */ = {
 			isa = PBXGroup;
 			children = (
-				E9DA09612B570340002DBCD0 /* AdventOfCode2023Tests.swift */,
+				E929F58D2B573101001A077A /* Day1 */,
+				E929F58C2B5730E6001A077A /* HelpersTests */,
 			);
 			path = AdventOfCode2023Tests;
 			sourceTree = "<group>";
@@ -189,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E929F58F2B573123001A077A /* SampleFile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E929F5892B572EAE001A077A /* FileLoader.swift in Sources */,
 				E9DA09522B57033F002DBCD0 /* ContentView.swift in Sources */,
 				E9DA09502B57033F002DBCD0 /* AdventOfCode2023App.swift in Sources */,
 			);
@@ -208,7 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9DA09622B570340002DBCD0 /* AdventOfCode2023Tests.swift in Sources */,
+				E929F58B2B5730B9001A077A /* FileLoaderTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,10 +382,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = AdventsOfCode2023/AdventsOfCode2023.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AdventsOfCode2023/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AdventOfCode2023/Preview Content\"";
 				DEVELOPMENT_TEAM = T26XN9U9U2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -365,7 +404,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dyrkabes.AdventsOfCode2023;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyrkabes.AdventOfCode2023;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -380,10 +419,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = AdventsOfCode2023/AdventsOfCode2023.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AdventsOfCode2023/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AdventOfCode2023/Preview Content\"";
 				DEVELOPMENT_TEAM = T26XN9U9U2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -403,7 +441,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dyrkabes.AdventsOfCode2023;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyrkabes.AdventOfCode2023;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -425,7 +463,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dyrkabes.AdventsOfCode2023Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyrkabes.AdventOfCode2023Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -448,7 +486,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dyrkabes.AdventsOfCode2023Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyrkabes.AdventOfCode2023Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
