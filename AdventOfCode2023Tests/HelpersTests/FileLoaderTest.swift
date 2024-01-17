@@ -13,7 +13,7 @@ final class FileLoaderTest: XCTestCase {
 
     func testLoadsFile() {
         // given && when
-        let result = Sut.input(from: "SampleFile", bundle: Bundle(for: type(of: self)))
+        let result = Sut.input(from: "SampleFile", bundle: Bundle.current)
 
         // then
         let expectedResult = [

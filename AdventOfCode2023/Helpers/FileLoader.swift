@@ -8,7 +8,9 @@
 import Foundation
 
 final class FileLoader {
-    static func input(from fileName: String, bundle: Bundle?) -> [String] {
+    private init() {}
+    
+    static func input(from fileName: String, bundle: Bundle? = nil) -> [String] {
         let bundle = bundle ?? Bundle(for: self)
         guard let data = loadData(from: fileName, bundle: bundle) else {
             fatalError("Input is not available \(fileName)")
